@@ -1,0 +1,6 @@
+server:
+  ip_port: "127.0.0.1:8080"
+
+database:
+  connection_string: "mongodb://localhost:27017"
+  schema_name: "crypto_app"

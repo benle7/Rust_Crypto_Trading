@@ -1,0 +1,37 @@
+[package]
+build = "build.rs"
+edition = "2021"
+name = "crypto_app"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-rt = "2"
+actix-web = "4"
+actix-web-httpauth = "0.7"
+
+anyhow = "1"
+async-trait = "0.1"
+chrono = "0.4"
+coingecko = "1.0.1"
+derive-error = "0.0.5"
+env_logger = "0.11"
+futures-util = "0.3"
+hyper = {version = "0.14.27", features = ["full"]}
+jsonwebtoken = "8"
+log = {version = "0.4.0", features = ["std"]}
+log-panics = {version = "2", features = ["with-backtrace"]}
+log4rs = {version = "1.1.1", features = ["gzip", "background_rotation"]}
+mongodb = "2.7"
+rand = "0.8"
+reqwest = {version = "0.12.5", features = ["json"]}
+serde = {version = "1.0", features = ["derive"]}
+serde_json = "1.0"
+serde_yaml = "0.9"
+sha2 = "0.10"
+shadow-rs = "0.26.1"
+tokio = {version = "1", features = ["full"]}
+
+[build-dependencies]
+shadow-rs = "0.26.1"
